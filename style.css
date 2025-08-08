@@ -208,4 +208,40 @@ nav {
 
 /*  --- Projects Section Styles --- */
 
-/* S */
+
+
+.section__title {
+    text-align: center;
+    font-size: 48px;
+    margin-bottom: 60px;
+}
+
+.project__image {
+    width: 100%;
+}
+
+.project__wrapper {
+    position: relative;
+    border-radius: 20px;
+    box-shadow: 0 20px 80px 0 rgb(0, 0, 0 , 0.45);
+    overflow: hidden;
+}
+
+.project__description {
+    position: absolute;
+    top: 50%;
+    left: 90px;
+    transform: translateY(-50%);
+    color: white;
+    max-width: 550px;
+}
+
+.project__wrapper--background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #1c1d25;
+    opacity: 0.7;
+}
