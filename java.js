@@ -2,6 +2,19 @@
 // template_hjulza7
 // fiG2VO-usTCySp2QC
 
+let isModalOpen = false;
+let contrastToggle = false;
+
+function toggleDarkMode() {
+    contrastToggle = !contrastToggle;
+    if (contrastToggle) {
+        document.body.classList.toggle("dark-theme");
+    }
+    else {
+        document.body.classList.remove("dark-theme");
+    }
+}
+
 function contact(event) {
   event.preventDefault(event);
   const loading = document.querySelector(".modal__overlay--loading");
@@ -24,4 +37,13 @@ function contact(event) {
         "The email service is temporarily unavailable. Please contact me directly on djhong83@gmail.com."
       );
     });
+}
+
+function toggleModal() {
+    if (isModalOpen) {
+        isModalOpen = false;
+        return document.body.classList.remove("modal--open");
+    }
+    isModalOpen = true;
+    document.body.classList += " modal--open";
 }
